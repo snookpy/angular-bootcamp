@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkangular_bootcamp=globalThis.webpackChunkangular_bootcamp||[]).push([[2325],{2325:(a,c,e)=>{e.d(c,{createPacketServices:()=>b.$});var b=e(8620);e(7960)}}]);

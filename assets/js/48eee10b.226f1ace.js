@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkangular_bootcamp=globalThis.webpackChunkangular_bootcamp||[]).push([[1545],{6682:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/angular-bootcamp/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

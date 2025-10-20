@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkangular_bootcamp=globalThis.webpackChunkangular_bootcamp||[]).push([[6366],{6366:(a,c,e)=>{e.d(c,{createArchitectureServices:()=>r.S});var r=e(8980);e(7960)}}]);

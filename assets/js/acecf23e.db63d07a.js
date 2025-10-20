@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkangular_bootcamp=globalThis.webpackChunkangular_bootcamp||[]).push([[1903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/angular-bootcamp/blog","blogTitle":"Blog","authorsListPath":"/angular-bootcamp/blog/authors"}')}}]);
