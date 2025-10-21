@@ -181,16 +181,22 @@ sequenceDiagram
 ```typescript
 import { Subject } from 'rxjs';
 const subject = new Subject<number>();
-subject.subscribe((value) => {
+const observerA = subject.subscribe((value) => {
     console.log('Observer A:', value);
 });
 
 subject.next(1);
 
-subject.subscribe((value) => {
+const observerB = subject.subscribe((value) => {
     console.log('Observer B:', value);
 });
 subject.next(2);
+
+ngOnDestroy() {
+    // don't forget to unsubscribe to avoid memory leaks
+    observerA.unsubscribe();
+    observerB.unsubscribe();
+}
 
 // Output:
 // Observer A: 1
