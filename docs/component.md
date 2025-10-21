@@ -47,6 +47,13 @@ Angular provides two decorators for this:
 
 **@Output()** — Send data from child to parent
 
+```mermaid
+graph TD
+    A[Parent Component] -->| @input | B[Child Component]
+    B -->|EventEmitter -> @Output | A
+    
+```
+
 example
 
 ``` parent.component.html
