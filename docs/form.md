@@ -223,19 +223,7 @@ export interface User {
 import { User } from "./user.interface"
 import { Address } from "./address.interface"
 
-// Option 1: Composition using intersection type
 export type UserWithAddress = User & {
-	address: Address
-}
-
-// Option 2: Interface extension
-export interface UserAddress extends User {
-	address: Address
-}
-
-// Option 3: Composition with nested interface
-export interface UserProfile {
-	user: User
 	address: Address
 }
 
@@ -253,8 +241,8 @@ import {
 	templateUrl: "./address-form.component.html",
 })
 export class AddressFormComponent implements OnInit {
-	// We'll bind to the parent's 'address' FormGroup instead of creating a new one
-	addressForm: FormGroup
+	// Define address form group
+    addressForm: FormGroup
 
 	constructor(
 		private fb: FormBuilder,
@@ -448,7 +436,7 @@ Note on parent binding approaches:
   - We inject `FormGroupDirective` in the child's constructor: `constructor(private fb: FormBuilder, private parentForm: FormGroupDirective)`.
   - The child component then reads `this.parentForm.form.get('address')` and binds to that FormGroup. This is explicit and works well when you want to directly manipulate or ensure controls exist on the parent group.
   - Pros: Explicit, easy to reason about, works well with DI and unit tests.
-  - Cons: Child depends on being used inside a parent form; you'll get runtime errors if used standalone unless you add fallbacks (as shown).
+  - Cons: Child depends on being used inside a parent form; you'll get runtime errors if used standalone (default in new version).
 
 - viewProviders / ControlContainer approach (earlier example):
   - Uses `viewProviders` to provide the `ControlContainer` to the child so the child template can use relative form directives without manually grabbing the parent form instance.
