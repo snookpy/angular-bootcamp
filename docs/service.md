@@ -1,6 +1,6 @@
 ---
-title: Angular Services — HttpClient and Observables
-sidebar_position: 4
+title: Angular Services
+sidebar_position: 3
 ---
 
 # Angular Services — `HttpClient` and Data Fetching
@@ -10,7 +10,7 @@ One of the most common use cases is **fetching data** from an API using the **Ht
 
 ---
 
-## ⚙️ What is a Service?
+## Service
 
 A **service** is a class with a specific purpose — for example, handling API calls, managing state, or providing utilities.
 
@@ -22,7 +22,7 @@ Angular services are typically:
 
 ---
 
-## 🌐 Example: Fetch Users from an API
+## Example: Fetch Users from an API
 
 Let’s build a simple `UserService` that fetches user data from a REST API.
 
